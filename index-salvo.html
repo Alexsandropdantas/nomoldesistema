@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nomolde</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Nomolde</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+		  <li class="nav-header">VISÕES</li>
+		  <li class="nav-item">
+			<a href="./index.html" class="nav-link active">
+			  <i class="fas fa-chart-pie nav-icon"></i>
+			  <p>Visão Geral</p>
+			</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="./producao.html" class="nav-link">
+			  <i class="fas fa-chart-pie nav-icon"></i>
+			  <p>Visão Produção</p>
+			</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="./revenda.html" class="nav-link">
+			  <i class="fas fa-chart-pie nav-icon"></i>
+			  <p>Visão Revenda</p>
+			</a>
+		  </li>
+
+
+          <li class="nav-header">RELATÓRIOS</li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Totais Corte e Fita
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                Totais Projetos
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">CADASTROS</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Clientes</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Feriados</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Horas x Serviços</p>
+            </a>
+          </li>
+          <li class="nav-header">INFORMAÇÕES</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Importante</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Alertas</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Redes Sociais</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Visão de Produção</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <!--
+			  <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+			  -->
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>1500</h3>
+
+                <p>Cortes do mês</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="#" class="small-box-footer">Detalhar <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>2000</h3>
+
+                <p>Fitamento mês</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="#" class="small-box-footer">Detalhar <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>900</h3>
+
+                <p>Embalagem mês</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="#" class="small-box-footer">Detalhar <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>40</h3>
+
+                <p>Entregas mês</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="#" class="small-box-footer">Detalhar <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Projetos em andamento</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped text-center">
+ <tr>
+  <td rowspan="2">
+Nome Empresa
+  </td>
+  <td rowspan="2">
+  Nome do Cliente
+  </td>
+  <td rowspan="2">
+Nº Corte
+  </td>
+  <td rowspan="2">
+Nº Fita
+  </td>
+  <td rowspan="2">
+Data Início
+  </td>
+  <td>
+CORTE
+  </td>
+  <td>
+  FITAMENTO
+  </td>
+  <td>
+FURAÇÃO/USINAGEM
+  </td>
+  <td>
+  EMBALAGEM
+  </td>
+  <td>DIA DE RECOLHIMENTO
+  </td>
+  <td>DIAS TRABALHADOS
+  </td>
+ </tr>
+ <tr>
+  <td>2
+  </td>
+  <td>2
+  </td>
+  <td>2
+  </td>
+  <td>2
+  </td>
+  <td>2
+  </td>
+  <td rowspan="2">2
+  </td>
+ </tr>
+ <tr>
+  <td>Empresa1
+  </td>
+  <td>Cliente1
+  </td>
+  <td>100
+  </td>
+  <td>100
+  </td>
+  <td>16/09/2023
+  </td>
+  <td>16/09/2023
+  </td>
+  <td>16/09/2023
+  </td>
+  <td>16/09/2023
+  </td>
+  <td>16/09/2023
+  </td>
+  <td>16/09/2023
+  </td>
+ </tr>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<style id="Planilha Produção_23778_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+.font023778
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;}
+.xl1523778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6323778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6423778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6523778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid black;
+	background:#6AA84F;
+	mso-pattern:#6AA84F none;
+	white-space:nowrap;}
+.xl6623778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:none;
+	background:#BFBFBF;
+	mso-pattern:#BFBFBF none;
+	white-space:nowrap;}
+.xl6723778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:none;
+	background:#BFBFBF;
+	mso-pattern:#BFBFBF none;
+	white-space:nowrap;}
+.xl6823778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6923778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid black;
+	border-right:.5pt solid black;
+	border-bottom:none;
+	border-left:.5pt solid black;
+	background:#6AA84F;
+	mso-pattern:#6AA84F none;
+	white-space:nowrap;}
+.xl7023778
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:.5pt solid black;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid black;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7123778
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid black;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#BFBFBF;
+	mso-pattern:#BFBFBF none;
+	white-space:nowrap;}
+.xl7223778
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--As seguintes informações foram geradas pelo Assistente para Publicação como
+Página da Web do Microsoft Excel.-->
+<!--Se o mesmo item for republicado a partir do Excel, todas as informações
+entre as marcas DIV serão substituídas.-->
+<!----------------------------->
+<!--INÍCIO DA SAÍDA DO 'ASSISTENTE PARA PUBLICAÇÃO COMO PÁGINA DA WEB' DO EXCEL
+-->
+<!----------------------------->
+
+<div id="Planilha Produção_23778" align=center x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1494 style='border-collapse:
+ collapse;table-layout:fixed;width:1121pt'>
+ <col width=146 style='mso-width-source:userset;mso-width-alt:5339;width:110pt'>
+ <col width=203 style='mso-width-source:userset;mso-width-alt:7424;width:152pt'>
+ <col width=121 style='mso-width-source:userset;mso-width-alt:4425;width:91pt'>
+ <col width=141 style='mso-width-source:userset;mso-width-alt:5156;width:106pt'>
+ <col width=111 style='mso-width-source:userset;mso-width-alt:4059;width:83pt'>
+ <col width=133 style='mso-width-source:userset;mso-width-alt:4864;width:100pt'>
+ <col width=111 style='mso-width-source:userset;mso-width-alt:4059;width:83pt'>
+ <col width=133 style='mso-width-source:userset;mso-width-alt:4864;width:100pt'>
+ <col width=127 style='mso-width-source:userset;mso-width-alt:4644;width:95pt'>
+ <col width=141 style='mso-width-source:userset;mso-width-alt:5156;width:106pt'>
+ <col width=127 style='mso-width-source:userset;mso-width-alt:4644;width:95pt'>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 width=146 style='border-bottom:.5pt solid black;
+  height:31.5pt;width:110pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 width=203 style='border-bottom:.5pt solid black;
+  width:152pt'>Nome do Cliente</td>
+  <td rowspan=2 class=xl6923778 width=121 style='border-bottom:.5pt solid black;
+  width:91pt'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 width=141 style='border-bottom:.5pt solid black;
+  width:106pt'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 width=111 style='border-bottom:.5pt solid black;
+  width:83pt'>DATA INÍCIO</td>
+  <td class=xl6523778 width=133 style='border-left:none;width:100pt'>CORTE</td>
+  <td class=xl6523778 width=111 style='border-left:none;width:83pt'>FITAMENTO</td>
+  <td class=xl6523778 width=133 style='border-left:none;width:100pt'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 width=127 style='border-left:none;width:95pt'>EMBALAGEM</td>
+  <td class=xl6523778 width=141 style='border-left:none;width:106pt'>DIA DE
+  RECOLHIMENTO</td>
+  <td class=xl6523778 width=127 style='border-left:none;width:95pt'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>7</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>Nomolde</td>
+  <td class=xl6423778>Juliana(OF225)</td>
+  <td class=xl6423778>1200</td>
+  <td class=xl6423778>957</td>
+  <td class=xl6323778>18/07/2023</td>
+  <td class=xl6323778>20/07/2023</td>
+  <td class=xl6323778>24/07/2023</td>
+  <td class=xl6323778>25/07/2023</td>
+  <td class=xl6323778>26/07/2023</td>
+  <td class=xl6323778>27/07/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>7</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>Nomolde</td>
+  <td class=xl6423778>Juliana(OF225)</td>
+  <td class=xl6423778>1200</td>
+  <td class=xl6423778>957</td>
+  <td class=xl6323778>18/07/2023</td>
+  <td class=xl6323778>20/07/2023</td>
+  <td class=xl6323778>24/07/2023</td>
+  <td class=xl6323778>25/07/2023</td>
+  <td class=xl6323778>26/07/2023</td>
+  <td class=xl6323778>27/07/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>Nomolde</td>
+  <td class=xl6423778>ALBANO (429)</td>
+  <td class=xl6423778>31</td>
+  <td class=xl6423778>38</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>WOODIE (CAMILLA)</td>
+  <td class=xl6423778>COMPLEMENTO PIERRE (434)</td>
+  <td class=xl6423778>31</td>
+  <td class=xl6423778>38</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>MAFFERO</td>
+  <td class=xl6423778>NORMA (434)</td>
+  <td class=xl6423778>359</td>
+  <td class=xl6423778>417</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>NOMOLDE</td>
+  <td class=xl6423778>GUSTAVO LUZ (435)</td>
+  <td class=xl6423778>359</td>
+  <td class=xl6423778>417</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>DECORA<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6423778>EDF JOSÉ (423)</td>
+  <td class=xl6423778>179</td>
+  <td class=xl6423778>259</td>
+  <td class=xl6323778>09/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>15/09/2023</td>
+  <td class=xl6323778>15/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>K- MOVEIS</td>
+  <td class=xl6423778>TELMA 204C (433)</td>
+  <td class=xl6423778>678</td>
+  <td class=xl6423778>568</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>DECORA<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6423778>BRUNO E ANDREZA (424)</td>
+  <td class=xl6423778>142</td>
+  <td class=xl6423778>127</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>MAFFERO</td>
+  <td class=xl6423778>FELIPE BALCAO (437)</td>
+  <td class=xl6423778>131</td>
+  <td class=xl6423778>121</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>K-MOVEIS</td>
+  <td class=xl6423778>SERGIO 106C (436)</td>
+  <td class=xl6423778>837</td>
+  <td class=xl6423778>804</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>ECO MÓVEIS</td>
+  <td class=xl6423778>ESPAÇO INTEGRAR (438)</td>
+  <td class=xl6423778>464</td>
+  <td class=xl6423778>575</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>SPAÇO</td>
+  <td class=xl6423778>RUBENS E PETRONIO (439)</td>
+  <td class=xl6423778>80</td>
+  <td class=xl6423778>101</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>NOMOLDE</td>
+  <td class=xl6423778>PAINEL BEATRIZ (440)</td>
+  <td class=xl6423778>11</td>
+  <td class=xl6423778>29</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>ECO MOVEIS</td>
+  <td class=xl6423778>ASSISTENCI TATIANA (441)</td>
+  <td class=xl6423778>4</td>
+  <td class=xl6423778>6</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>NOMOLDE</td>
+  <td class=xl6423778>LUCIANO KOLBE (399)</td>
+  <td class=xl6423778>446</td>
+  <td class=xl6423778>266</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>MAAP</td>
+  <td class=xl6423778>RHP ASSISTÊNCIA (442)</td>
+  <td class=xl6423778>41</td>
+  <td class=xl6423778>49</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>MEU DESIGN</td>
+  <td class=xl6423778>RENATA CARVALHO (443)</td>
+  <td class=xl6423778>100</td>
+  <td class=xl6423778>196</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>K-MOVEIS</td>
+  <td class=xl6423778>TELMA (433)</td>
+  <td class=xl6423778>678</td>
+  <td class=xl6423778>568</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>NOMOLDE</td>
+  <td class=xl6423778>JULIANA E RODRIGO PT2</td>
+  <td class=xl6423778>345</td>
+  <td class=xl6423778>223</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>MEU DESIGN</td>
+  <td class=xl6423778>FABIANA (445)</td>
+  <td class=xl6423778>482</td>
+  <td class=xl6423778>339</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>REALIZZE</td>
+  <td class=xl6423778>CONDOMÍNIO (446)</td>
+  <td class=xl6423778>153</td>
+  <td class=xl6423778>160</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl1523778 style='height:15.75pt'></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+  <td class=xl1523778></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td rowspan=2 height=42 class=xl6923778 style='border-bottom:.5pt solid black;
+  height:31.5pt'>Nome da Empresa</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nome do
+  Cliente</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº CORTE</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>Nº FITA</td>
+  <td rowspan=2 class=xl6923778 style='border-bottom:.5pt solid black'>DATA
+  INÍCIO</td>
+  <td class=xl6523778 style='border-left:none'>CORTE</td>
+  <td class=xl6523778 style='border-left:none'>FITAMENTO</td>
+  <td class=xl6523778 style='border-left:none'>FURAÇÃO/USINAGEM</td>
+  <td class=xl6523778 style='border-left:none'>EMBALAGEM</td>
+  <td class=xl6523778 style='border-left:none'>DIA DE RECOLHIMENTO</td>
+  <td class=xl6523778 style='border-left:none'>DIAS</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6623778 style='height:15.75pt'>2</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>1</td>
+  <td class=xl6723778>0</td>
+  <td rowspan=2 class=xl7123778 style='border-top:none'>5</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6823778 style='height:15.75pt'>ARTE NOBRE</td>
+  <td class=xl6423778>TELMA (433)</td>
+  <td class=xl6423778>678</td>
+  <td class=xl6423778>568</td>
+  <td class=xl6323778>07/09/2023</td>
+  <td class=xl6323778>11/09/2023</td>
+  <td class=xl6323778>12/09/2023</td>
+  <td class=xl6323778>13/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+  <td class=xl6323778>14/09/2023</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=146 style='width:110pt'></td>
+  <td width=203 style='width:152pt'></td>
+  <td width=121 style='width:91pt'></td>
+  <td width=141 style='width:106pt'></td>
+  <td width=111 style='width:83pt'></td>
+  <td width=133 style='width:100pt'></td>
+  <td width=111 style='width:83pt'></td>
+  <td width=133 style='width:100pt'></td>
+  <td width=127 style='width:95pt'></td>
+  <td width=141 style='width:106pt'></td>
+  <td width=127 style='width:95pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Projetos em andamento</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Trident</td>
+                    <td>Internet
+                      Explorer 4.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td> 4</td>
+                    <td>X</td>
+                  </tr>
+                  <tr>
+                    <td>Other browsers</td>
+                    <td>All others</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>U</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Nomolde &copy; 2000-2023 <a href="http://nomolde.com.br">nomolde.com.br</a>.</strong>
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
